@@ -18,7 +18,6 @@ export const metadata: Metadata = {
     icon: "/zn.png",   
   },
 }
-
 export default function RootLayout({
   children,
 }: {
