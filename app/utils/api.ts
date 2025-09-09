@@ -1,7 +1,7 @@
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_URL ||
   (process.env.NODE_ENV === "production"
-    ? "https://zain-backend-woad.vercel.app/"
+    ? "https://zain-backend-woad.vercel.app"
     : "http://localhost:5000");
 
 export async function apiRequest(endpoint: string, options: RequestInit = {}) {
@@ -36,7 +36,7 @@ export async function apiRequest(endpoint: string, options: RequestInit = {}) {
 
     return await res.json();
   } catch (error) {
-    console.error(`❌ API Error [${endpoint}]:`, error);
+    console.error(`❌ API request Error [${endpoint}]:`, error);
     return null;
   }
 }

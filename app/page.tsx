@@ -65,8 +65,6 @@ const heroSlides = [
     gradient: "from-red-500 via-pink-500 to-orange-500",
   },
 ]
-
-
 const categories = [
 
   {
